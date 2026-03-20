@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap');
+
+/* Color Variables */
+:root {
+    --primary: #2563EB;
+    --secondary: #60A5FA;
+    --background: #F8FAFC;
+    --card-bg: #FFFFFF;
+    --text-primary: #0F172A;
+    --text-secondary: #64748B;
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+}
+
+/* Global Light Theme */
+[data-testid="stAppViewContainer"] {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+}
+
+[data-testid="stHeader"] {
+    background: var(--card-bg);
+    border-bottom: 1px solid #E2E8F0;
+    height: 60px;
+}
+
+/* Hide default sidebar (User requested Top Navbar) */
+[data-testid="collapsedControl"] {
+    display: none;
+}
+[data-testid="stSidebar"] {
+    display: none;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif !important;
+    color: var(--text-primary) !important;
+}
+
+h1 { font-weight: 700 !important; font-size: 1.8rem !important; }
+h2 { font-weight: 600 !important; font-size: 1.4rem !important; margin-bottom: 0.5rem !important; }
+h3 { font-weight: 600 !important; font-size: 1.1rem !important; color: var(--primary) !important; }
+h4 { font-weight: 600 !important; font-size: 1rem !important; }
+
+p, span, div {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-secondary);
+}
+
+/* Cards */
+.card {
+    background: var(--card-bg);
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+    transform: translateY(-2px);
+}
+
+/* Explainability Highlight Card */
+.explain-card {
+    background: #EFF6FF; /* very light primary tint */
+    border: 1px solid #BFDBFE;
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.explain-card h3 {
+    margin-top: 0;
+    color: #1E3A8A !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.explain-card ul li {
+    color: #1E3A8A;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Match Score Bar */
+.score-badge {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+.score-green { color: var(--success); }
+.score-yellow { color: var(--warning); }
+.score-red { color: var(--danger); }
+
+/* Progress bar container */
+.progress-bg {
+    background: #E2E8F0;
+    border-radius: 8px;
+    height: 12px;
+    width: 100%;
+    margin: 8px 0;
+    overflow: hidden;
+}
+.progress-fill {
+    height: 100%;
+    border-radius: 8px;
+    transition: width 1s ease-in-out;
+}
+.bg-green { background: var(--success); }
+.bg-yellow { background: var(--warning); }
+.bg-red { background: var(--danger); }
+
+/* Missing/Matched Skills Lists */
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.skill-list li {
+    padding: 6px 0;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.matched-skill { color: var(--success) !important; }
+.missing-skill { color: var(--danger) !important; }
+
+/* Bias Check Badge */
+.bias-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #DCFCE7;
+    color: #166534;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Primary Button (Analyze) */
+.btn-analyze > button {
+    background-color: var(--primary) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 14px 24px !important;
+    font-weight: 600 !important;
+    font-family: 'Poppins', sans-serif !important;
+    width: 100% !important;
+    font-size: 1.1rem !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2) !important;
+}
+
+.btn-analyze > button:hover {
+    background-color: #1D4ED8 !important;
+    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Secondary Button (Extract) */
+.btn-secondary > button {
+    background: #EFF6FF !important;
+    color: var(--primary) !important;
+    border: 1px solid #BFDBFE !important;
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+}
+.btn-secondary > button:hover {
+    background: #DBEAFE !important;
+}
+
+/* Inputs & Textareas */
+.stTextArea > div > div > textarea,
+.stTextInput > div > div > input {
+    background-color: var(--card-bg) !important;
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 8px !important;
+    color: var(--text-primary) !important;
+    font-size: 14px !important;
+}
+
+.stTextArea > div > div > textarea:focus,
+.stTextInput > div > div > input:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2) !important;
+}
+
+/* File Upload */
+[data-testid="stFileUploader"] {
+    border: 2px dashed #CBD5E1 !important;
+    border-radius: 8px !important;
+    background-color: #F8FAFC !important;
+    padding: 16px !important;
+}
+
+/* Top Navbar Style Elements */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background: var(--card-bg);
+    border-bottom: 1px solid #E2E8F0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-top: -60px;
+    margin-left: -5rem;
+    margin-right: -5rem;
+    margin-bottom: 24px;
+}
+
+.nav-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 12px;
+}
+
+/* Smooth Fade In */
+.fade-in {
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Simple Bars for Skill Gap */
+.skill-bar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.skill-bar-label {
+    width: 100px;
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+.skill-bar-track {
+    flex-grow: 1;
+    height: 8px;
+    background: #E2E8F0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-left: 12px;
+}
+.skill-bar-fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+/* Hide Streamlit elements */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}

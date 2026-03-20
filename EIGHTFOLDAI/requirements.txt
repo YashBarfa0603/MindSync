@@ -1,0 +1,8 @@
+streamlit
+requests
+sentence-transformers
+scikit-learn
+numpy
+plotly
+streamlit-tags
+PyPDF2
