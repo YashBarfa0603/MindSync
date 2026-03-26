@@ -59,8 +59,10 @@ MindSync automates GitHub profile analysis using AI to:
 
 ## 📸 Screenshots
 
-<img width="920" height="537" alt="Screenshot 2026-03-20 172927" src="https://github.com/user-attachments/assets/6a48a885-da90-48d1-a528-6e2a213b2fff" />
-
+<img width="920" height="537" alt="Screenshot 2026-03-20 172927" src="https://github.com/user-attachments/assets/6b3253c5-bc3a-458e-b9a3-8a4fbc3dffa9" />
+<img width="1495" height="1075" alt="Screenshot 2026-03-26 123622" src="https://github.com/user-attachments/assets/0a29c78f-3b46-46bc-af8a-40dac4c0890c" />
+<img width="1300" height="988" alt="Screenshot 2026-03-26 123659" src="https://github.com/user-attachments/assets/9202ef43-4942-49d6-a8a0-27b33013ca2e" />
+<img width="1262" height="1069" alt="Screenshot 2026-03-26 123721" src="https://github.com/user-attachments/assets/130b923f-e2ee-457a-9cb2-d2735372691f" />
 
 ---
 
