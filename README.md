@@ -2,7 +2,7 @@
 
 ## 🚀 Overview
 
-MindSync is an AI-powered platform that analyzes a developer’s GitHub profile to extract skills, evaluate projects, and match candidates with suitable job roles.
+MindSync is an AI-powered platform that analyzes a developer’s GitHub profile to extract skills, evaluate projects, and match candidates with suitable Job Roles.
 It simplifies the hiring process by converting unstructured GitHub data into structured insights using AI.
 
 ---
